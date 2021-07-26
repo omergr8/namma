@@ -1,0 +1,118 @@
+.main {
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4px 30px rgba(177, 177, 177, 0.15);
+  border-radius: 10px;
+}
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container h2 {
+  color: #52689e;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.borderBottom {
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+/* Error Model css */
+.payButtonDiv {
+  text-align: end;
+}
+.payButton {
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 5px;
+}
+.errorText {
+  font-size: 20px;
+  font-weight: 400;
+  color: #484a54;
+}
+.errorText span {
+  color: #e06956 !important;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+/* Load Detail css */
+.detailFlexRow {
+  display: flex;
+  justify-content: space-between;
+}
+/* .detailFlexRow > div {
+  flex-basis: 100%;
+} */
+.enrollNammaDiv2 {
+  margin-bottom: -15px;
+}
+.detailFlex {
+  display: flex;
+  flex-direction: column;
+}
+.detailGetText {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  color: #484a54;
+}
+.detailGetText span {
+  color: #429d84;
+  font-size: 20px;
+  font-weight: 600;
+}
+.detailTotal {
+  font-size: 14px;
+  font-weight: 400;
+}
+.loanDetailButtonDiv {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  color: #52689e !important;
+  padding-bottom: 25px;
+}
+.loanDetailButtonDiv2 {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  color: #52689e !important;
+  padding-bottom: 25px;
+  margin-top: 30px;
+}
+.loanDetailButton {
+  /* margin-right: -10px; */
+  color: #52689e !important;
+}
+.loanDetailText {
+  font-weight: 500 !important;
+}
+.loanDetailText span {
+  vertical-align: middle;
+  margin-left: 10px;
+  font-weight: 500 !important;
+}
+.enrollNammaDiv {
+  text-align: right;
+}
+.enrollNammaDiv p:first-child {
+  color: #52689e !important;
+  align-items: center;
+  vertical-align: middle;
+  /* line-height: 5px; */
+  margin-bottom: 5px;
+}
+.enrollNammaDiv p:last-child {
+  margin-top: 10px;
+}
+.enrollNammaButton {
+  background-color: #52689e !important;
+  color: white !important;
+  border-radius: 5px !important;
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+  height: 40px;
+}

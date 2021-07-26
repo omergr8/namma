@@ -1,0 +1,147 @@
+.main {
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(177, 177, 177, 0.15);
+  border-radius: 10px;
+  margin-top: 25px;
+}
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tableHeading {
+  color: black;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.borderBottom {
+  border-bottom: 1px solid black;
+}
+/* Payment Table css */
+.viewMoreButtonDiv {
+  text-align: end;
+}
+.viewMoreButton {
+  /* margin-right: -10px; */
+  color: #52689e !important;
+}
+.viewMoreText {
+  font-weight: 500 !important;
+}
+.viewMoreText span {
+  vertical-align: middle;
+  margin-left: 10px;
+  font-weight: 500 !important;
+}
+.failRow {
+  background-color: #ffe2dd !important;
+}
+.statusItemText {
+  color: #e06956 !important;
+  margin-top: 20px;
+}
+.statusItemText2 {
+  margin-top: 20px;
+}
+.statusItemText span {
+  color: #e06956 !important;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.positiveAmount {
+  line-height: 15px;
+  padding-top: 15px;
+  color: #429d84;
+  font-size: 17px;
+  font-weight: 500;
+}
+.negativeAmount {
+  line-height: 15px;
+  padding-top: 15px;
+  color: #e37765;
+  font-size: 17px !important;
+  font-weight: 500 !important;
+}
+.availableText {
+  line-height: 0px;
+  color: #aeacb4;
+}
+.toolTip {
+  background-color: #e06956 !important;
+}
+.toolText a {
+  color: white !important;
+  text-decoration: underline;
+}
+.colDate {
+  color: #484a54 !important;
+  margin-top: 15px;
+  font-size: 16px;
+}
+/* Payment header css */
+.headerFlex {
+  display: flex;
+  padding-top: 25px;
+}
+
+/* filter modal css */
+.filterButton {
+  color: white !important;
+  background-color: #52689e !important;
+  border-color: #52689e !important;
+  border-radius: 5px;
+  margin-left: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.filterHead {
+  color: #52689e !important;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.filterHead2 {
+  color: #52689e !important;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 20px;
+}
+.clearButton {
+  color: black;
+  font-weight: 500 !important;
+}
+.cancelButton {
+  color: #bcbbc2 !important;
+}
+.applyButton {
+  background-color: #52689e !important;
+  color: white !important;
+  border-radius: 5px !important;
+}
+.transactionCheck {
+}
+.filterDatePicker {
+  display: flex;
+  justify-content: space-between;
+}
+.minMaxSlider {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -20px;
+}
+.footerRowFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.footerRowFlex2 {
+  display: flex;
+}
+.datePickerCol p {
+  line-height: 5px;
+  margin-top: 5px;
+}
+.footerDiv {
+  margin-top: 20px;
+}
