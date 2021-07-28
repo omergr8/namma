@@ -2,7 +2,7 @@ import classes from "./Payments.module.css";
 import React, { useState, useEffect } from "react";
 import PaymentHeader from "./Components/PaymentHeader";
 import PaymentTable from "./Components/PaymentTable";
-const Payments = ({ paymentRecord }) => {
+const Payments = ({ paymentRecord, payNowHandler }) => {
   const [pastPaymentArray, setPastPaymentArray] = useState();
   const [upcomingPaymentArray, setUpcomingPaymentArray] = useState();
   const dateFormatter = (d) => {
@@ -44,11 +44,17 @@ const Payments = ({ paymentRecord }) => {
         <PaymentHeader />
         <div>
           <h2 className={classes.tableHeading}>Past Payments</h2>
-          <PaymentTable paymentArray={pastPaymentArray} />
+          <PaymentTable
+            paymentArray={pastPaymentArray}
+            payNowHandler={(text) => payNowHandler(text)}
+          />
         </div>
         <div>
           <h2 className={classes.tableHeading}>Upcoming Payments</h2>
-          <PaymentTable paymentArray={upcomingPaymentArray} />
+          <PaymentTable
+            paymentArray={upcomingPaymentArray}
+            payNowHandler={(text) => payNowHandler(text)}
+          />
         </div>
         {/* <div className={classes.borderBottom} /> */}
       </div>

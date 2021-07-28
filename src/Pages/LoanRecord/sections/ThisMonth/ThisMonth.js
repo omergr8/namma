@@ -41,11 +41,16 @@ const ThisMonth = (props) => {
     findErrorPayment();
   }, []);
 
+  const payNowHandler = (text) => {
+    props.payNowHandler(text);
+  };
   return (
     <div className={classes.main}>
       <div className={classes.container}>
         <h2>this month</h2>
-        {errorPayment && <ErrorModel />}
+        {errorPayment && (
+          <ErrorModel payNowHandler={(text) => payNowHandler(text)} />
+        )}
         <LoadDetail
           upcomingPayment={upcomingPayment}
           purpose={purpose}

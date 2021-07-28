@@ -3,9 +3,9 @@ import classes from "../ThisMonth.module.css";
 import { Row, Col, Button } from "antd";
 import { RiErrorWarningFill } from "react-icons/ri";
 
-const ErrorModel = () => {
+const ErrorModel = (props) => {
   const payNowHandler = (text) => {
-    console.log(text);
+    props.payNowHandler(text);
   };
   return (
     <div>

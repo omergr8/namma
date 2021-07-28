@@ -5,7 +5,7 @@ import { paymentRecord, loan, serviceEnrollment } from "./data";
 const LoanRecord = () => {
   return (
     <>
-      <div>
+      <div className={classes.mainContainer}>
         <h2 className={classes.mainHeading}>
           {loan.purpose} Loan record with {loan.borrowerName}
         </h2>

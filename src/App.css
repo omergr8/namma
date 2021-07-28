@@ -1,6 +1,6 @@
 .App {
   /* text-align: center; */
-  width: 90%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -14,4 +14,15 @@ thead[class*="ant-table-thead"] th {
 }
 td.ant-table-column-sort {
   background: unset !important;
+}
+
+@media (max-width: 900px) {
+  .App {
+    width: 90%;
+  }
+}
+@media (min-width: 1500px) {
+  .App {
+    max-width: 1400px;
+  }
 }
