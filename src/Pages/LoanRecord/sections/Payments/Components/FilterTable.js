@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { useHistory, Link } from "react-router-dom";
 import { Modal, Button, Checkbox, DatePicker, Space } from "antd";
+import { filterApi } from "../../../../../constants/filter";
 import classes from "../Payments.module.css";
 const FilterTable = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -8,12 +10,29 @@ const FilterTable = () => {
   const [loremChecked, setLoremChecked] = useState(false);
   const [fromDate, setFromDate] = useState(null);
   const [toDate, setToDate] = useState(null);
+  const history = useHistory();
   const showModal = () => {
     setIsModalVisible(true);
   };
-
   const handleOk = () => {
     setIsModalVisible(false);
+    const filtered = filterApi(
+      fromDate,
+      toDate,
+      withdrawlChecked,
+      depositChecked,
+      loremChecked
+    );
+    console.log(filtered);
+    let url;
+    if (filtered === undefined) {
+      url = `/api/v1/customers/{{cid}}/paymentSchedule?status=Completed`;
+      history.push("?status=Completed");
+    } else {
+      url = `/api/v1/customers/{{cid}}/paymentSchedule${filtered}`;
+      history.push(filtered);
+    }
+    console.log(url, history);
   };
 
   const handleCancel = () => {

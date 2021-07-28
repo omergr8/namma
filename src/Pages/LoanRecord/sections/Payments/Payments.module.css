@@ -21,8 +21,16 @@
   border-bottom: 1px solid black;
 }
 /* Payment Table css */
+.paymentTableDiv {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+/* .paymentTable {
+  width: 100px !important;
+} */
 .viewMoreButtonDiv {
   text-align: end;
+  justify-content: flex-end;
 }
 .viewMoreButton {
   /* margin-right: -10px; */

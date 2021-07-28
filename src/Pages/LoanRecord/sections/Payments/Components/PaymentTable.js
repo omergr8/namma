@@ -57,7 +57,7 @@ const columns = [
   {
     title: "DESCRIPTION",
     dataIndex: "description",
-    render: (text, record) => wordReplacement(text, record.amountInCents),
+    render: (text, record) => wordReplacement(text, record.amountInCents / 100),
   },
   {
     title: "PAYMENT METHOD",
@@ -72,15 +72,17 @@ const columns = [
     render: (text, record) => (
       <div>
         {record.amountInCents > 0 ? (
-          <p className={classes.positiveAmount}>+${record.amountInCents}.00</p>
+          <p className={classes.positiveAmount}>
+            +${record.amountInCents / 100}.00
+          </p>
         ) : (
           <p className={classes.negativeAmount}>
-            -${Math.abs(record.amountInCents)}.00
+            -${Math.abs(record.amountInCents) / 100}.00
           </p>
         )}
         {record.loanAmountPendingInCents !== null && (
           <p className={classes.availableText}>
-            ${record.loanAmountPendingInCents}.00 left
+            ${record.loanAmountPendingInCents / 100}.00 left
           </p>
         )}
       </div>
@@ -113,7 +115,7 @@ const PaymentTable = ({ paymentArray }) => {
     }
   }, [paymentArray]);
   return (
-    <div>
+    <div className={classes.paymentTableDiv}>
       <Table
         rowClassName={(record, index) =>
           record.status === "Failed" && classes.failRow

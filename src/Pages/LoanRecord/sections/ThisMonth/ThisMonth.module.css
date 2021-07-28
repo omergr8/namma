@@ -24,9 +24,13 @@
   text-align: end;
 }
 .payButton {
-  padding-left: 45px;
-  padding-right: 45px;
-  border-radius: 5px;
+  padding-left: 45px !important;
+  padding-right: 45px !important;
+  border-radius: 5px !important;
+  height: 40px;
+  font-weight: 500 !important;
+  color: #e06956 !important;
+  border: 2px solid #e06956 !important;
 }
 .errorText {
   font-size: 20px;
@@ -37,6 +41,11 @@
   color: #e06956 !important;
   vertical-align: middle;
   margin-right: 10px;
+}
+.anchorText {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #484a54 !important;
 }
 /* Load Detail css */
 .detailFlexRow {
@@ -98,12 +107,12 @@
 .enrollNammaDiv {
   text-align: right;
 }
-.enrollNammaDiv p:first-child {
+.enrollNammaDiv a:first-child {
   color: #52689e !important;
-  align-items: center;
-  vertical-align: middle;
+  align-items: center !important;
+  vertical-align: middle !important;
   /* line-height: 5px; */
-  margin-bottom: 5px;
+  margin-bottom: 5px !important;
 }
 .enrollNammaDiv p:last-child {
   margin-top: 10px;

@@ -1,8 +1,12 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import classes from "../ThisMonth.module.css";
 import { Row, Col, Button } from "antd";
 import { RiErrorWarningFill } from "react-icons/ri";
 
 const ErrorModel = () => {
+  const payNowHandler = (text) => {
+    console.log(text);
+  };
   return (
     <div>
       <Row>
@@ -12,13 +16,24 @@ const ErrorModel = () => {
               <span>
                 <RiErrorWarningFill />
               </span>
-              There was an error with recent payment. Please try again.
+              There was an error with recent payment.{" "}
+              <a
+                onClick={() => payNowHandler("i am from try again")}
+                href="#"
+                className={classes.anchorText}
+              >
+                Please try again
+              </a>
+              .
             </p>
           </div>
         </Col>
         <Col span={12}>
           <div className={classes.payButtonDiv}>
-            <Button danger className={classes.payButton}>
+            <Button
+              className={classes.payButton}
+              onClick={() => payNowHandler("i am from pay now")}
+            >
               Pay Now
             </Button>
           </div>

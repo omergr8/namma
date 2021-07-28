@@ -13,6 +13,9 @@ const LoadDetail = ({ upcomingPayment, borrowerName, enrollmentType }) => {
     });
     return result;
   }
+  const whatIsNammaHandler = () => {
+    console.log("what is namma easy");
+  };
   return (
     <div>
       <div className={classes.detailFlexRow}>
@@ -39,12 +42,15 @@ const LoadDetail = ({ upcomingPayment, borrowerName, enrollmentType }) => {
         <div className={classes.enrollNammaDiv}>
           {enrollmentType === null && (
             <div className={classes.enrollNammaDiv2}>
-              <p>
-                <span>
-                  <AiOutlineQuestionCircle />
-                </span>{" "}
-                What is Namma Easy?
-              </p>
+              <a href="#" onClick={whatIsNammaHandler}>
+                <p>
+                  {" "}
+                  <span>
+                    <AiOutlineQuestionCircle />
+                  </span>{" "}
+                  What is Namma Easy?
+                </p>
+              </a>
               <Button className={classes.enrollNammaButton}>
                 Enroll Namma Easy
               </Button>

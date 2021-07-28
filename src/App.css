@@ -6,7 +6,12 @@
 }
 thead[class*="ant-table-thead"] th {
   color: #52689e !important;
+  font-weight: 700 !important;
+  background-color: white !important;
 }
 .ant-table-tbody > tr.ant-table-row:hover > td {
   background-color: unset !important;
+}
+td.ant-table-column-sort {
+  background: unset !important;
 }
