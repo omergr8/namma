@@ -74,7 +74,9 @@
   font-weight: 500 !important;
 }
 .availableText {
-  line-height: 0px;
+  /* line-height: 0px; */
+  margin-top: -10px;
+  margin-bottom: 0px;
   color: #aeacb4;
 }
 .toolTip {

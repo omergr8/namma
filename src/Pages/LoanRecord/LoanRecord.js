@@ -3,6 +3,9 @@ import Payments from "./sections/Payments/Payments";
 import ThisMonth from "./sections/ThisMonth/ThisMonth";
 import { paymentRecord, loan, serviceEnrollment } from "./data";
 const LoanRecord = () => {
+  const payNowHandler = (text) => {
+    console.log(text);
+  };
   return (
     <>
       <div className={classes.mainContainer}>
@@ -13,8 +16,12 @@ const LoanRecord = () => {
           paymentRecord={paymentRecord}
           loan={loan}
           serviceEnrollment={serviceEnrollment}
+          payNowHandler={(text) => payNowHandler(text)}
         />
-        <Payments paymentRecord={paymentRecord} />
+        <Payments
+          paymentRecord={paymentRecord}
+          payNowHandler={(text) => payNowHandler(text)}
+        />
       </div>
     </>
   );
